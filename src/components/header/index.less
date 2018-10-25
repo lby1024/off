@@ -1,0 +1,50 @@
+.header{
+    background-color: #fff;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 21px;
+    box-shadow:2px 2px 3px #aaaaaa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    .left {cursor: pointer;}
+    .right{
+        display: flex;
+        align-items: center;
+        .user-pic {
+            width: 39px;
+            height: 39px;
+            border-radius: 50%;
+            margin-right: 21px;
+            cursor: pointer;
+            position: relative;
+            display: block;
+            background-image: url(https://avatars1.githubusercontent.com/u/20128368?s=460&v=4);
+            background-size: 100%;
+            background-position: center;
+            &::before{
+                content: '';
+                width: 12px;
+                height: 12px;
+                background-color: greenyellow;
+                border: 2px solid #c3c3c3;
+                border-radius: 50%;
+                position: absolute;
+                bottom: 1px;
+                right: 0px;
+            }
+        }
+        span {
+            color: #001529;
+            cursor: pointer;
+            font-weight: bolder;
+            &:hover {
+                color: #d4237a;
+            }
+        }
+    }
+}
